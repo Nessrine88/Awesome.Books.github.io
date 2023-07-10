@@ -1,8 +1,8 @@
-# Capstone Project - Prickly Pear Seeds Oil Company Website
+# Awesome Books Website
 
 <div align="center">
 
-  <h3><b>Capstone Project - Prickly Pear Seeds Oil Company Website</b></h3>
+  <h3><b>Awesome Books</b></h3>
 
 </div>
 
@@ -26,37 +26,30 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-The Capstone Project is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.
-
-The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.
+Awesome Books is a straightforward website designed to display book advertisements and enable users to add and remove books.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 The project is built using the following technologies and tools:
 
 - HTML
-- CSS
 - JavaScript
 
 ## Key Features <a name="key-features"></a>
 
-The Prickly Pear Seed Oils Company website offers the following key features:
+The Awesome Books website offers the following key features:
 
--**Product Showcase**: Showcases different types of Prickly Pear Seed Oils with detailed descriptions, product images, and pricing information.
--**Benefits and Uses**: Provides information about the benefits and uses of Prickly Pear Seed Oils, highlighting their skincare, health, and culinary applications.
--**Online Store**: Offers a secure and user-friendly online store where visitors can add products to their cart, view their cart, and complete the purchase process.
--**Customer Reviews**: Displays customer reviews and testimonials to build trust and credibility for the products.
--**About Us**: Provides background information about the company, its values, and its commitment to producing high-quality Prickly Pear Seed Oils.
--**Contact Us**: Includes contact information and a contact form for inquiries and customer support.
-We hope this clarifies the nature of the Capstone Project as a Prickly Pear Seed Oils Company website.
+-**Add Books**
+-**Remove Books**
+-**Display Books**
 
 ## Acknowledgements <a name="acknowledgements"></a>
-We would like to express our gratitude to [Cindy Shin](https://www.behance.net/adagio07), the author of the original design used for this project. Her [Creative Commons License](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) allows us to adapt and showcase her design in this capstone project. We appreciate her contribution to the design community.
+We would like to express our gratitude to Microverse online school.
 
 
 # 🚀 Live Demo <a name="live-demo"></a>
 
-A live demo of the Prickly Pear Seeds Oil Company Website is available at [Prickly Pear Seed Oil Website Live Demo](https://nessrine88.github.io/Capstone-Project/index.html).
+coming soon
 
 # 💻 Getting Started <a name="getting-started"></a>
 
@@ -74,7 +67,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository to your desired location:
 ```sh
-git clone git@github.com:Nessrine88/Capstone-Project.git
+git clone git@github.com:Nessrine88/Awesome.Books.github.io.git
 ```
 
 2. Open the project folder in your code editor.
@@ -89,7 +82,7 @@ Tests for this project will be added in the future.
 
 ## Deployment
 
-To deploy the  Prickly Pear Seeds Oil Company Website to a live server, follow these steps:
+To deploy the  Awesome Books Website to a live server, follow these steps:
 
 1. Choose a hosting provider or platform for your website (e.g., GitHub Pages, Netlify, Heroku).
 
@@ -102,15 +95,22 @@ To deploy the  Prickly Pear Seeds Oil Company Website to a live server, follow t
 5. Access your deployed website using the provided URL or domain.
 
 # 👥 Authors <a name="Nessrine Macherki"></a>
+# 👥 Authors <a name="Juan Carlos"></a>
+
 
 👤 **Macherki Nessrine**
 - GitHub: [@githubhandle](https://github.com/Nessrine88)
 - Twitter: [@twitterhandle](https://twitter.com/Nessour88)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nessrine-macherki-86959196/)
 
+👤 **Juan Carlos**
+- GitHub: [@jcmunav63](https://github.com/jcmunav63)
+- Twitter: [@jcmunav63](https://twitter.com/jcmunav63)
+- LinkedIn: [@juan-carlos-muñoz-navarrete](https://www.linkedin.com/in/juan-carlos-mu%C3%B1oz-navarrete-5a15b6276/)
+
 # 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/your-repository/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Nessrine88/Awesome.Books.github.io/issues).
 
 # ⭐️ Show Your Support <a name="support"></a>
 

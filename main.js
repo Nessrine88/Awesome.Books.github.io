@@ -1,46 +1,50 @@
-books = [{bookTitle: 'The Lord of the Rings', authorName: 'XXX'},
-{bookTitle: 'The Little Prince', authorName: 'YYY'}];
+// Check if there are any existing books in local storage
+let books = JSON.parse(localStorage.getItem('books')) || [];
+// Function to remove a book from the collection
+function removeBook(book) {
+  books = books.filter((b) => b !== book);
+  localStorage.setItem('books', JSON.stringify(books));
+}
 
-
-function display(){
+// Function to display all books in the collection
+function displayBooks() {
   const displayedBooks = document.getElementById('displayedBooks');
-  const div= document.querySelectorAll('.book');
+  displayedBooks.innerHTML = '';
+
   books.forEach((book) => {
-    div.innerHtml=`
-    <h3>${bookTitle}</h3>
-    <h3>${authorName}</h3>
-    <button class='removeBtn'>Remove</button>
+    const div = document.createElement('div');
+    div.innerHTML = `
+      <h3>${book.title}</h3>
+      <h3>${book.author}</h3>
+      <button class="removeBtn">Remove</button>
+      <hr>
     `;
+
+    const removeBtn = div.querySelector('.removeBtn');
+    removeBtn.addEventListener('click', () => {
+      removeBook(book);
+      div.remove();
+    });
+
     displayedBooks.appendChild(div);
   });
 }
 
+// Function to add a new book to the collection
 function addBook(title, author) {
-  const newBook = {title, author};
+  const newBook = { title, author };
   books.push(newBook);
   localStorage.setItem('books', JSON.stringify(books));
-  
-};
+  displayBooks();
+}
 
-const addBtn=document.getElementById('addBtn');
-  addBtn.addEventListener('click', () =>{
-    const bookTitle = document.getElementById('title').value;
-    const authorName = document.getElementById('author').value;
-    addBook(bookTitle, authorName);
-    console.log('click');
-  });
+// Event listener for the add button
+const addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click', () => {
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
+  addBook(title, author);
+});
 
-
-  display();
-  addBtn.addEventListener('click', () =>{
-    const bookTitle = document.getElementById('title').value;
-    const authorName = document.getElementById('author').value;
-    addBook(bookTitle, authorName);
-    console.log('click');
-  });
-
-addEventListener('onload', () => {
-  
-  display();
-///  console.log('onload');
- });
+// Display initial books on page load
+displayBooks();

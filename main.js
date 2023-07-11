@@ -14,8 +14,8 @@ function displayBooks() {
   books.forEach((book) => {
     const div = document.createElement('div');
     div.innerHTML = `
-      <h3>${book.title}</h3>
-      <h3>${book.author}</h3>
+      <p>${book.title}</p>
+      <p>${book.author}</p>
       <button class="removeBtn">Remove</button>
       <hr>
     `;

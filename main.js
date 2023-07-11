@@ -43,34 +43,42 @@ class Books {
   constructor(){
     this.Books=JSON.parse(localStorage.getItem('books2'))|| [];
   }
-  Book(title,author){
-    let b = new Book(title,author)
-    this.Books.push(b)
-    return b
-  }
-  get allBooks(){
-    return this.Books
-  }}
+}
+  // Book(title,author){
+  //   let b = new Book(title,author)
+  //   this.Books.push(b)
+  //   return b
+  // }
+
+// get allBooks(){
+//   return this.Books
+// }
 
 const addBtn = document.getElementById('addBtn');
 addBtn.addEventListener('click', () => {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
-  new Book (title,author)
-  Books.push(Book)
+  myBook(title, author)
 });
 
 class Book {
-  constructor(title,author) {
-      this.title = title;
-      this.author = author;
-      
-  }
- 
-  remove() {
-   this.destroy();
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
   }
 }
+
+function myBook(title, author) {
+  const aBook = '{${title}, ${author}}';
+  let b = new Book(title, author)
+  Books.push(aBook)
+  // return b
+}
+
+function remove(Book) {
+  this.destroy();
+}
+
 
 
 // Class that holds a collection of players and properties and functions for the group
@@ -79,13 +87,13 @@ class Book {
 const see=document.getElementById('see');
   see.addEventListener('click', () => {
     const Booklist= new Books;
-   
+
     console.log(Booklist)
     console.log('click')
   });
 
-  // this could include summary stats like average score, etc. For simplicy, just the count for now
-//   get numberOfPlayers(){
+  // this could include summary stats like average score, etc. For simplicy, 
+// just the count for now get numberOfPlayers(){
 //       return this.players.length
 //   }
 // }

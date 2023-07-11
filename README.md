@@ -1,8 +1,6 @@
-# Awesome Books Website
-
 <div align="center">
 
-  <h3><b>Awesome Books</b></h3>
+  <h1><b>Awesome Books</b></h1>
 
 </div>
 
@@ -11,8 +9,6 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
   - [Key Features](#key-features)
-  - [Acknowledgements](#acknowledgements)
-- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -20,6 +16,7 @@
   - [Run Tests](#run-tests)
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
+- [Acknowledgements](#acknowledgements)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show Your Support](#support)
 - [📝 License](#license)
@@ -28,28 +25,17 @@
 
 Awesome Books is a straightforward website designed to display book advertisements and enable users to add and remove books.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 The project is built using the following technologies and tools:
 
 - HTML
+- CSS
 - JavaScript
 
-## Key Features <a name="key-features"></a>
-
-The Awesome Books website offers the following key features:
-
--**Add Books**
--**Remove Books**
--**Display Books**
-
-## Acknowledgements <a name="acknowledgements"></a>
-We would like to express our gratitude to Microverse online school.
-
-
-# 🚀 Live Demo <a name="live-demo"></a>
-
-coming soon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 💻 Getting Started <a name="getting-started"></a>
 
@@ -94,9 +80,9 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 
 5. Access your deployed website using the provided URL or domain.
 
-# 👥 Authors <a name="Nessrine Macherki"></a>
-# 👥 Authors <a name="Juan Carlos"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# 👥 Authors <a name="Nessrine Macherki"></a>
 
 👤 **Macherki Nessrine**
 - GitHub: [@githubhandle](https://github.com/Nessrine88)
@@ -108,10 +94,38 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 - Twitter: [@jcmunav63](https://twitter.com/jcmunav63)
 - LinkedIn: [@juan-carlos-muñoz-navarrete](https://www.linkedin.com/in/juan-carlos-mu%C3%B1oz-navarrete-5a15b6276/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+The Awesome Books website offers the following key features:
+
+- **Add Books**
+- **Remove Books**
+- **Display Books**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Nessrine88/Awesome.Books.github.io/issues).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgements <a name="acknowledgements"></a>
+We would like to express our gratitude to Microverse online school.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # ⭐️ Show Your Support <a name="support"></a>
 
 If you find this project helpful or you like it, please give it a star ⭐️. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -41,7 +41,14 @@
 // Event listener for the add button
 class Books {
   constructor(){
+    this.data = [];
     this.Books=JSON.parse(localStorage.getItem('books2'))|| [];
+  }
+
+  addBook(book) {
+    this.data.push(book);
+    localStorage.setItem('books', JSON.stringify(this.data));
+    // addToUI(book);
   }
 }
   // Book(title,author){
@@ -54,13 +61,6 @@ class Books {
 //   return this.Books
 // }
 
-const addBtn = document.getElementById('addBtn');
-addBtn.addEventListener('click', () => {
-  const title = document.getElementById('title').value;
-  const author = document.getElementById('author').value;
-  myBook(title, author)
-});
-
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -68,10 +68,42 @@ class Book {
   }
 }
 
+const addBtn = document.getElementById('addBtn');
+addBtn.addEventListener('click', () => {
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
+  const book = `{title: ${title}, author: ${author}}`;
+  Books2.addBook(book);
+  displayBooks();
+  // myBook(title, author)
+});
+
+function displayBooks(Books) {
+  // const Books = [];
+  const displayedBooks = document.getElementById('displayedBooks');
+  displayedBooks.innerHTML = '';
+
+  Books.forEach((book) => {
+    const div = document.createElement('div');
+    const title = Books.title;
+    const author = Books.author;
+    div.innerHTML = `
+      <p>${title}</p>
+      <p>${author}</p>
+      <button class="removeBtn">Remove</button>
+      <hr>
+    `;
+    displayedBooks.appendChild(div);
+  });
+}
+
 function myBook(title, author) {
-  const aBook = '{${title}, ${author}}';
-  let b = new Book(title, author)
-  Books.push(aBook)
+  const newBook = new Book(title, author);
+  // const aBook = '{${title}, ${author}}';
+  const bookList = new Books();
+  bookList.books.push(newBook);
+  // let b = new Book(title, author)
+  // this..push(aBook);
   // return b
 }
 
@@ -79,12 +111,22 @@ function remove(Book) {
   this.destroy();
 }
 
-
+window.onload = () => {
+  Books2 = new Books;
+  
+  Books2 = JSON.parse(localStorage.getItem('books')) || [];
+  console.log(Books2);
+  // if (Books2.data === null) {
+  //   Books2 = new Books;  //.data = [];
+  //   return;
+  // }
+  displayBooks(Books2);
+}
 
 // Class that holds a collection of players and properties and functions for the group
 
 
-const see=document.getElementById('see');
+  const see=document.getElementById('see');
   see.addEventListener('click', () => {
     const Booklist= new Books;
 

@@ -26,9 +26,7 @@ class BookCollection {
     this.books.forEach((book) => {
       const div = document.createElement('div');
       div.innerHTML = `
-        <h3>${book.title}</h3>
-        <h3>${book.author}</h3>
-        <button class="removeBtn">Remove</button>
+        <p>\"${book.title}\"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
         <hr>
       `;
 
@@ -38,6 +36,7 @@ class BookCollection {
         div.remove();
       });
 
+      div.classList.add('div1');
       this.displayedBooks.appendChild(div);
     });
   }

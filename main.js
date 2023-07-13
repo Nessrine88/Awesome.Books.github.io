@@ -10,21 +10,45 @@ const section2 = document.getElementById('section2');
 const section3 = document.getElementById('section3');
 const section4 = document.getElementById('section4');
 
-list.addEventListener('click', () => {
-  section2.style.display = 'none';
-  section3.style.display = 'block';
-  section4.style.display = 'none';
-  heading.style.display = 'block';
-  console.log('click');
+list.addEventListener('click', (event) => {
+  event.preventDefault();
+  // section2.style.display = 'block';
+  // section3.style.display = 'none';
+  // section4.style.display = 'none';
+  // heading.style.display = 'block';
+
+  section3.classList.add('hidden');
+  section2.classList.add('show');
+  section4.classList.add('hidden');
+  heading.classList.add('show');
+  // console.log('click');
 });
 
 
-list.addEventListener('click',()=>{
+addBooks.addEventListener('click',(event)=>{
   // section3.style.display='none'
-  section2.style.display='none';
-heading.style.display='block';
-console.log('click');
+  event.preventDefault();
+  section3.classList.add('show');
+  section2.classList.add('hidden');
+  section4.classList.add('hidden');
+  heading.classList.add('hidden');
+  // section2.style.display='none';
+  // heading.style.display='block';
+  // console.log('click');
 })
+
+contact.addEventListener('click',(event)=>{
+  // section3.style.display='none'
+  event.preventDefault();
+  section4.classList.add('show');
+  section2.classList.add('hidden');
+  section3.classList.add('hidden');
+  heading.classList.add('hidden');
+  // section2.style.display='none';
+  // heading.style.display='block';
+  // console.log('click');
+})
+
 class Book {
   constructor(title, author) {
     this.title = title;

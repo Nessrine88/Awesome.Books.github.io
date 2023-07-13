@@ -84,6 +84,11 @@ h3 {
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  border: 2px solid;
+  padding: 15px;
+}
+section {
+  margin-top: 20px;
 }
 
 .navlist {
@@ -98,12 +103,19 @@ h3 {
   /* float: left; */
   margin-left: 15px;
   margin-right: 15px;
-  
+  border-left: 2px solid;
 }
 
 a {
   text-decoration: none;
   color: #000;
+  margin-left: 20px;
+ border-left: solid 2px;
+ padding: 10px;
+ text-align: center;
+}
+.noBorder {
+  border: none;
 }
 
 input {
@@ -129,4 +141,21 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#datetime {
+  margin: auto;
+  width: 45%;
+  text-align: right;
+}
+
+#footer {
+  width: 45%;
+  margin: auto;
+ 
+}
+.copyright {
+  padding: 10px 0 10px 10px;
+  margin: 20px 0;
+border: 2px solid;
 }

@@ -1,50 +1,72 @@
-// Check if there are any existing books in local storage
-let books = JSON.parse(localStorage.getItem('books')) || [];
-// Function to remove a book from the collection
-function removeBook(book) {
-  books = books.filter((b) => b !== book);
-  localStorage.setItem('books', JSON.stringify(books));
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-use-before-define */
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
-// Function to display all books in the collection
-function displayBooks() {
-  const displayedBooks = document.getElementById('displayedBooks');
-  displayedBooks.innerHTML = '';
+class BookCollection {
+  constructor() {
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
+    this.displayedBooks = document.getElementById('displayedBooks');
+    this.addBtn = document.getElementById('addBtn');
+    this.currentIndex = 0;
 
-  books.forEach((book) => {
-    const div = document.createElement('div');
-    div.innerHTML = `
-      <p>${book.title}</p>
-      <p>${book.author}</p>
-      <button class="removeBtn">Remove</button>
-      <hr>
-    `;
-
-    const removeBtn = div.querySelector('.removeBtn');
-    removeBtn.addEventListener('click', () => {
-      removeBook(book);
-      div.remove();
+    this.addBtn.addEventListener('click', () => {
+      const title = document.getElementById('title').value;
+      const author = document.getElementById('author').value;
+      this.addBook(title, author);
     });
 
-    displayedBooks.appendChild(div);
-  });
+    this.displayBooks();
+  }
+
+  displayBooks() {
+    this.displayedBooks.innerHTML = '';
+    let i = 0;
+
+    this.books.forEach((book, index) => {
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
+        <hr>
+      `;
+
+      const removeBtn = div.querySelector('.removeBtn');
+      removeBtn.addEventListener('click', () => {
+        this.removeBook(book);
+        div.remove();
+      });
+
+      div.classList.add('div1');
+      if (i % 2 === 0) {
+        div.style.backgroundColor = '#e4e2e2';
+      } else {
+        div.style.backgroundColor = 'white';
+      }
+
+      div.dataset.index = index; // Assign the index to the dataset attribute
+
+      i += 1;
+      this.displayedBooks.appendChild(div);
+    });
+  }
+
+  addBook(title, author) {
+    const newBook = new Book(title, author);
+    this.books.push(newBook);
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.displayBooks();
+  }
+
+  removeBook(book) {
+    this.books = this.books.filter((b) => b !== book);
+    localStorage.setItem('books', JSON.stringify(this.books));
+    this.displayBooks();
+  }
 }
 
-// Function to add a new book to the collection
-function addBook(title, author) {
-  const newBook = { title, author };
-  books.push(newBook);
-  localStorage.setItem('books', JSON.stringify(books));
-  displayBooks();
-}
-
-// Event listener for the add button
-const addBtn = document.getElementById('addBtn');
-addBtn.addEventListener('click', () => {
-  const title = document.getElementById('title').value;
-  const author = document.getElementById('author').value;
-  addBook(title, author);
-});
-
-// Display initial books on page load
-displayBooks();
+// eslint-disable-next-line no-unused-vars
+const bookCollection = new BookCollection();

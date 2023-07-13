@@ -32,7 +32,7 @@ h3 {
   border: 2px solid;
   margin-bottom: 30px;
   max-height: 50vh;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 #form {

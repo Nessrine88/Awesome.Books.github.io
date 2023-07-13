@@ -30,7 +30,7 @@ class BookCollection {
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-        <p>"${i}${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
+        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
         <hr>
       `;
 
@@ -41,9 +41,6 @@ class BookCollection {
       });
 
       div.classList.add('div1');
-      // if (this.displayedBooks.nthChild(odd)) {
-      //   div.style.backgroundColor = '#e4e2e2';
-      // }
       if (i % 2 === 0) {
         div.style.backgroundColor = '#e4e2e2';
       } else {
@@ -67,7 +64,7 @@ class BookCollection {
   removeBook(book) {
     this.books = this.books.filter((b) => b !== book);
     localStorage.setItem('books', JSON.stringify(this.books));
-    displayBooks();
+    this.displayBooks();
   }
 
  

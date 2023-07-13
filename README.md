@@ -23,7 +23,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-Awesome Books is a straightforward website designed to display book advertisements and enable users to add and remove books.
+Awesome Books is a website designed to display book advertisements and enable users to add and remove books.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

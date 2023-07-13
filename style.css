@@ -13,17 +13,16 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-top: 120px;
 }
 
 p {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  padding: 4px 2px;
 }
 
 h3 {
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 
 #displayedBooks {
@@ -46,13 +45,17 @@ h3 {
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  font-size: 20px;
+
   /* justify-content: flex-end;
   align-items: flex-end; */
 }
 
 #addBtn {
   float: right;
+
   /* justify-self: flex-end; */
+
   /* justify-content: flex-end; */
   padding: 4px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
@@ -108,11 +111,12 @@ section {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+
   /* width: fit-content; */
 }
 
 .divAdd {
-  width:80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -130,7 +134,9 @@ section {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+
   /* float: right; */
+
   /* align-items: center; */
 }
 
@@ -153,16 +159,19 @@ a {
   text-decoration: none;
   color: #000;
   margin-left: 20px;
- border-left: solid 2px;
- padding: 10px;
- text-align: center;
+  border-left: solid 2px;
+  padding: 10px;
+  text-align: center;
 }
+
 .noBorder {
   border: none;
 }
 
 input {
   border: 2px solid black;
+  padding: 5px;
+  font-size: 20px;
 }
 
 /* .line {
@@ -183,31 +192,36 @@ input {
 .info {
   width: 80%;
   height: 40vh;
-  margin: auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+
+  /* justify-content: center; */
 }
 
 #datetime {
   margin: auto;
-  width: 45%;
+  width: 90%;
   text-align: right;
 }
 
 #footer {
   width: 95%;
+
   /* margin-: auto; */
   margin-right: auto;
   margin-left: auto;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 2%;
- 
 }
+
 .copyright {
   padding: 10px 0 10px 10px;
   margin: 20px 0;
-border: 2px solid;
+  border: 2px solid;
 }

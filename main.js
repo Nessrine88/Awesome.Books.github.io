@@ -66,8 +66,6 @@ class BookCollection {
     localStorage.setItem('books', JSON.stringify(this.books));
     this.displayBooks();
   }
-
- 
 }
 
 // eslint-disable-next-line no-unused-vars

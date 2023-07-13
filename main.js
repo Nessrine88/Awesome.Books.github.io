@@ -12,6 +12,7 @@ class BookCollection {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.displayedBooks = document.getElementById('displayedBooks');
     this.addBtn = document.getElementById('addBtn');
+    this.currentIndex = 0;
 
     this.addBtn.addEventListener('click', () => {
       const title = document.getElementById('title').value;
@@ -23,14 +24,14 @@ class BookCollection {
   }
 
   displayBooks() {
+    
     this.displayedBooks.innerHTML = '';
     let i = 0;
 
-    this.books.forEach((book) => {
+    this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-     
-        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
+        <p>"${i}${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
         <hr>
       `;
 
@@ -38,6 +39,8 @@ class BookCollection {
       removeBtn.addEventListener('click', () => {
         this.removeBook(book);
         div.remove();
+        displayBooks() 
+
       });
 
       div.classList.add('div1');
@@ -47,6 +50,8 @@ class BookCollection {
       } else {
         div.style.backgroundColor = 'white';
       }
+
+      div.dataset.index = index; // Assign the index to the dataset attribute
 
       i += 1;
       this.displayedBooks.appendChild(div);
@@ -63,8 +68,11 @@ class BookCollection {
   removeBook(book) {
     this.books = this.books.filter((b) => b !== book);
     localStorage.setItem('books', JSON.stringify(this.books));
+    
   }
-  
+
+ 
 }
 
+// eslint-disable-next-line no-unused-vars
 const bookCollection = new BookCollection();

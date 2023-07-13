@@ -24,7 +24,6 @@ class BookCollection {
   }
 
   displayBooks() {
-    
     this.displayedBooks.innerHTML = '';
     let i = 0;
 
@@ -39,12 +38,12 @@ class BookCollection {
       removeBtn.addEventListener('click', () => {
         this.removeBook(book);
         div.remove();
-        displayBooks() 
-
       });
 
       div.classList.add('div1');
-
+      // if (this.displayedBooks.nthChild(odd)) {
+      //   div.style.backgroundColor = '#e4e2e2';
+      // }
       if (i % 2 === 0) {
         div.style.backgroundColor = '#e4e2e2';
       } else {
@@ -68,7 +67,7 @@ class BookCollection {
   removeBook(book) {
     this.books = this.books.filter((b) => b !== book);
     localStorage.setItem('books', JSON.stringify(this.books));
-    
+    displayBooks();
   }
 
  

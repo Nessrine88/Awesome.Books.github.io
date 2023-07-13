@@ -27,6 +27,8 @@ Awesome Books is a website designed to display book advertisements and enable us
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 The project is built using the following technologies and tools:
@@ -114,6 +116,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgements <a name="acknowledgements"></a>
+
 We would like to express our gratitude to Microverse online school and our coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

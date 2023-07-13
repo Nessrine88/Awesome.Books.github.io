@@ -89,7 +89,7 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 - Twitter: [@twitterhandle](https://twitter.com/Nessour88)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nessrine-macherki-86959196/)
 
-👤 **Juan Carlos**
+👤 **Juan Carlos Muñoz**
 - GitHub: [@jcmunav63](https://github.com/jcmunav63)
 - Twitter: [@jcmunav63](https://twitter.com/jcmunav63)
 - LinkedIn: [@juan-carlos-muñoz-navarrete](https://www.linkedin.com/in/juan-carlos-mu%C3%B1oz-navarrete-5a15b6276/)
@@ -100,9 +100,10 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 
 The Awesome Books website offers the following key features:
 
-- **Add Books**
-- **Remove Books**
-- **Display Books**
+- **Contact page**
+- **Navigation bar**
+- **Footer**
+- **All sections in one single page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +114,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgements <a name="acknowledgements"></a>
-We would like to express our gratitude to Microverse online school.
+We would like to express our gratitude to Microverse online school and our coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

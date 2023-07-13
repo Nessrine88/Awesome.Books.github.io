@@ -8,22 +8,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<h1>All Awesome Books</h1>
-<div id="displayedBooks">
+  <section id="navbar">
+    <div class="logo">Awesome Books</div>
+    <!-- <p></p> -->
+    <ul class="navlist">
+      <li><a href="#list">List</a></li>
+      <li><a href="#addBooks">Add new</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </section>
+  <section id="heading">
+    <h1>All Awesome Books</h1>
+  </section>
+  <section id="list">
+    <div id="displayedBooks">
+    </div>
+  </section>
+  <section id="addBooks">
+    <div class="line"></div>
+    <div id="form">
+      <h3>Add a new book</h3>
+      <input id = "title" type="text" placeholder="Title...">
+      
+      <input id = "author" type="text" placeholder="Author...">
+    
+      <button id="addBtn">Add</button>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact information</h2>
+    <div class="info">
+      <p class="para1">Do you have any questions or you just want to say "Hello"?</p>
+      <p class="para1">You can reach out to us!</p>
+      <ul class="list2">
+        <li>Our e-mail mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </section>
+  <section id="footer">
 
-  
-</div>
-
-<div class="line"></div>
-<div id="form">
-  <h3>Add a new book</h3>
-  <input id = "title" type="text" placeholder="Title...">
-  
-  <input id = "author" type="text" placeholder="Author...">
-
-  <button id="addBtn">Add</button>
-</div>
-<script src="main.js"></script>
+  </section>
+  <script src="main.js"></script>
 </body>
 </html>

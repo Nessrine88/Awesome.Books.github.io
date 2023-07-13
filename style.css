@@ -72,6 +72,40 @@ h3 {
   margin-bottom: 10px;
 }
 
+#contact {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  /* float: right; */
+  /* align-items: center; */
+}
+
+.navList li {
+  /* float: left; */
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 input {
   border: 2px solid black;
 }
@@ -89,4 +123,10 @@ input {
 
 .odd {
   background-color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

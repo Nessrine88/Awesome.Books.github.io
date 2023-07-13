@@ -1,5 +1,6 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-use-before-define */
+
 const list = document.getElementById('list');
 const addBooks = document.getElementById('addBooks');
 const contact = document.getElementById('contact');
@@ -8,15 +9,26 @@ const section2 = document.getElementById('section2');
 const section3 = document.getElementById('section3');
 const section4 = document.getElementById('section4');
 
-list.addEventListener('click', (event) => {
-  event.preventDefault();
-  section2.style.display = 'block';
-  section3.style.display = 'none';
-  section4.style.display = 'none';
-});
+function showAndHide() {
+  list.addEventListener('click', (event) => {
+    event.preventDefault();
+    section2.style.display = 'block';
+    section3.style.display = 'none';
+    section4.style.display = 'none';
+  });
+}
+
+// list.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   section2.style.display = 'block';
+//   section3.style.display = 'none';
+//   section4.style.display = 'none';
+// });
 
 addBooks.addEventListener('click', (event) => {
   event.preventDefault();
+  title.value = "";
+  author.value = "";
   section2.style.display = 'none';
   section3.style.display = 'block';
   section4.style.display = 'none';
@@ -54,6 +66,9 @@ class BookCollection {
       const title = document.getElementById('title').value;
       const author = document.getElementById('author').value;
       this.addBook(title, author);
+      section2.style.display = 'block';
+      section3.style.display = 'none';
+      section4.style.display = 'none';
     });
 
     this.displayBooks();

@@ -46,17 +46,12 @@ h3 {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-
-  /* justify-content: flex-end;
-  align-items: flex-end; */
 }
 
 #addBtn {
   float: right;
-
-  /* justify-self: flex-end; */
-
-  /* justify-content: flex-end; */
+  width: 60px;
+  margin-top: 10px;
   padding: 4px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
 }
@@ -76,15 +71,10 @@ h3 {
 #title {
   margin-bottom: 10px;
   width: 70%;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 #author {
-  margin-bottom: 10px;
   width: 70%;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 #contact {
@@ -111,8 +101,6 @@ section {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
-  /* width: fit-content; */
 }
 
 .divAdd {
@@ -134,14 +122,9 @@ section {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-
-  /* float: right; */
-
-  /* align-items: center; */
 }
 
 .navList li {
-  /* float: left; */
   margin-left: 15px;
   margin-right: 15px;
   border-left: 2px solid;
@@ -174,13 +157,6 @@ input {
   font-size: 20px;
 }
 
-/* .line {
-  width: 10%;
-  height: 2px;
-  background-color: black;
-  margin: 40px auto;
-} */
-
 .even {
   background-color: lightgrey;
 }
@@ -199,8 +175,6 @@ input {
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-
-  /* justify-content: center; */
 }
 
 #datetime {
@@ -211,8 +185,6 @@ input {
 
 #footer {
   width: 95%;
-
-  /* margin-: auto; */
   margin-right: auto;
   margin-left: auto;
   position: absolute;

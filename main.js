@@ -18,22 +18,14 @@ function showAndHide() {
   });
 }
 
-// list.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   section2.style.display = 'block';
-//   section3.style.display = 'none';
-//   section4.style.display = 'none';
-// });
-
 addBooks.addEventListener('click', (event) => {
   event.preventDefault();
-  title.value = "";
-  author.value = "";
+  title.value = '';
+  author.value = '';
   section2.style.display = 'none';
   section3.style.display = 'block';
   section4.style.display = 'none';
-  heading.style.display ='none';
-
+  heading.style.display = 'none';
 });
 
 contact.addEventListener('click', (event) => {
@@ -41,12 +33,8 @@ contact.addEventListener('click', (event) => {
   section2.style.display = 'none';
   section3.style.display = 'none';
   section4.style.display = 'block';
-  heading.style.display ='none';
+  heading.style.display = 'none';
 });
-
-
-
-
 
 class Book {
   constructor(title, author) {
@@ -98,7 +86,7 @@ class BookCollection {
         div.style.backgroundColor = 'white';
       }
 
-      div.dataset.index = index; // Assign the index to the dataset attribute
+      div.dataset.index = index;
 
       i += 1;
       this.displayedBooks.appendChild(div);
@@ -119,18 +107,14 @@ class BookCollection {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
 const bookCollection = new BookCollection();
-
 
 function updateDateTime() {
   const currentDateTime = new Date();
   const datetimeElement = document.getElementById('datetime');
-  datetimeElement.textContent = currentDateTime.toLocaleString();}
+  datetimeElement.textContent = currentDateTime.toLocaleString();
+}
 
 setInterval(updateDateTime, 1000);
 
-// Initial update
 updateDateTime();
-
-

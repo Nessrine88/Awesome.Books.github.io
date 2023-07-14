@@ -1,5 +1,36 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-use-before-define */
+
+// eslint-disable-next-line no-unused-vars
+const list = document.getElementById('list');
+const addBooks = document.getElementById('addBooks');
+const contact = document.getElementById('contact');
+
+const section2 = document.getElementById('section2');
+const section3 = document.getElementById('section3');
+const section4 = document.getElementById('section4');
+const heading = document.getElementById('heading');
+
+addBooks.addEventListener('click', (event) => {
+  event.preventDefault();
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
+  title.value = '';
+  author.value = '';
+  section2.style.display = 'none';
+  section3.style.display = 'block';
+  section4.style.display = 'none';
+  heading.style.display = 'none';
+});
+
+contact.addEventListener('click', (event) => {
+  event.preventDefault();
+  section2.style.display = 'none';
+  section3.style.display = 'none';
+  section4.style.display = 'block';
+  heading.style.display = 'none';
+});
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -18,6 +49,11 @@ class BookCollection {
       const title = document.getElementById('title').value;
       const author = document.getElementById('author').value;
       this.addBook(title, author);
+      section2.style.display = 'block';
+      section3.style.display = 'none';
+      section4.style.display = 'none';
+      title.value = '';
+      author.value = '';
     });
 
     this.displayBooks();
@@ -47,7 +83,7 @@ class BookCollection {
         div.style.backgroundColor = 'white';
       }
 
-      div.dataset.index = index; // Assign the index to the dataset attribute
+      div.dataset.index = index;
 
       i += 1;
       this.displayedBooks.appendChild(div);
@@ -70,3 +106,13 @@ class BookCollection {
 
 // eslint-disable-next-line no-unused-vars
 const bookCollection = new BookCollection();
+
+function updateDateTime() {
+  const currentDateTime = new Date();
+  const datetimeElement = document.getElementById('datetime');
+  datetimeElement.textContent = currentDateTime.toLocaleString();
+}
+
+setInterval(updateDateTime, 1000);
+
+updateDateTime();

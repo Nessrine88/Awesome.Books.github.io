@@ -52,6 +52,8 @@ class BookCollection {
       section2.style.display = 'block';
       section3.style.display = 'none';
       section4.style.display = 'none';
+      title.value = '';
+      author.value = '';
     });
 
     this.displayBooks();

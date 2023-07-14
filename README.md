@@ -102,10 +102,7 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 
 The Awesome Books website offers the following key features:
 
-- **Contact page**
-- **Navigation bar**
-- **Footer**
-- **All sections in one single page**
+- **Waiting to be seen...**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
